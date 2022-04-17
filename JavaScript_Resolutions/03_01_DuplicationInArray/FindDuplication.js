@@ -56,7 +56,7 @@ var findRepeatNumber3 = function (nums) {
     // 思路就是把数字放到对应的索引上  比方说数字3放到索引3的位置
     for (let i = 0; i < nums.length; i++) {
         // 如果当前数字跟对应的索引不相同则交换
-        while (nums[i] !== i) {
+        while (nums[i] !== i) {             // TODO 我觉得while这里对人脑最难理解 看看DEBUG
             if (nums[i] === nums[nums[i]]) {
                 return nums[i];
             }
