@@ -13,7 +13,7 @@
 var findRepeatNumber1 = function(nums){
     // https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
     // https://www.jianshu.com/p/0ddbc3c8f683
-    nums.sort()
+    nums.sort() // 时间 空间
     for(let i = 0; i < nums.length - 1; i++){
         if(nums[i] === nums[i + 1]) {
             return nums[i]
